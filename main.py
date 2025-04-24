@@ -58,6 +58,9 @@ for page in range(1, 32):
 
 # Close browser
 driver.quit()
-
 df = pd.DataFrame(results)
+
+df["Early Career Pay"] = df["Early Career Pay"].replace('[\$,]', '', regex=True).astype(float)
+df["Mid Career Pay"] = df["Mid Career Pay"].replace('[\$,]', '', regex=True).astype(float)
+
 df.to_csv('college.csv')
