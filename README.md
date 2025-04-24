@@ -2,4 +2,7 @@
 with pandas
 
 needs to have "webdriver-manager" to run 
-for installing webdriver-manager, I got vertual environment (venv) to install the package and run the codes.
+
+1. create venv by python3 -m venv venv in the folder you're working on
+2. source venv/bin/activate
+3. then pip install webdriver-manager
